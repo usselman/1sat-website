@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "analyze": "set ANALYZE=true&&yarn build",
+    "analyze": "ANALYZE=true&&yarn build",
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest out",
@@ -23,7 +23,7 @@
     "@types/mime": "^3.0.1",
     "@types/node": "18.15.3",
     "@types/randombytes": "^2.0.0",
-    "@types/react": "18.0.28",
+    "@types/react": "18.2.46",
     "@types/react-copy-to-clipboard": "^5.0.4",
     "@types/react-gamepad": "^1.0.3",
     "@types/styled-components": "^5.1.26",
