@@ -6,10 +6,9 @@
     "analyze": "set ANALYZE=true&&yarn build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx serve@latest out",
     "lint": "next lint",
-    "deploy": "yarn build && firebase deploy",
-    "serve": "serve out"
+    "deploy": "yarn build && firebase deploy"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.0.0",
