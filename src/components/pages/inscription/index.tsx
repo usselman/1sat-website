@@ -48,9 +48,10 @@ const InscriptionPage: React.FC<PageProps> = ({}) => {
     useWallet();
 
   const searchParams = useSearchParams();
-  const inscriptionId = decodeURIComponent(
+
+  const inscriptionId = useMemo(() => decodeURIComponent(
     searchParams.get("inscriptionId") || ""
-  );
+  ), [searchParams]);
 
   const { getBmapTxById } = useBitcoinSchema();
   const {
