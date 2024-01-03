@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn build && firebase deploy",
+    "serve": "serve out"
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.0.0",
@@ -73,7 +74,8 @@
     "babel-plugin-macros": "^3.1.0",
     "daisyui": "^4.5.0",
     "fs": "^0.0.1-security",
-    "replace-module-webpack-plugin": "^1.0.0"
+    "replace-module-webpack-plugin": "^1.0.0",
+    "serve": "^14.2.1"
   },
   "babelMacros": {
     "twin": {

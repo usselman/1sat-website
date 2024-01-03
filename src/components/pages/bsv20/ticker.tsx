@@ -6,6 +6,7 @@ import { WithRouterProps } from "next/dist/client/with-router";
 import Head from "next/head";
 import { useSearchParams } from "next/navigation";
 import Router from "next/router";
+import { QRCodeSVG } from "qrcode.react";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { FaQuestionCircle } from "react-icons/fa";
 import { toBitcoin } from "satoshi-bitcoin-ts";
@@ -83,15 +84,15 @@ const TickerPage: React.FC<PageProps> = ({}) => {
         <h3 className="text-lg text-center my-2 font-semibold">
           Indexing Fund
         </h3>
-        {/* <QRCodeSVG
+        <QRCodeSVG
           value={ticker.fundAddress || ""}
           className="my-4 w-full h-full"
           includeMargin={true}
-        /> */}
+        />
 
         <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-          {/* <div>Indexing Fund Address</div>
-          <div className="text-right text-xs">{ticker.fundAddress}</div> */}
+          <div>Indexing Fund Address</div>
+          <div className="text-right text-xs">{ticker.fundAddress}</div>
           {!ticker.included && (
             <>
               <div>
